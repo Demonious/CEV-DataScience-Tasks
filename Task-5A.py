@@ -31,7 +31,7 @@ def Generator(i):
     Personal_data_2=[]
     Personal_data_2.append(fake.email())
     Personal_data_2.append(fake.password())
-    Personal_data_1.append(liste2)
+    Personal_data_1.append(Personal_data_2)
   return Personal_data_1
 
 Base.metadata.create_all(engine)
