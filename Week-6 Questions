@@ -1,0 +1,24 @@
+1) Json-Dictionary arasındaki fark nedir? Dumps Ne işe yarıyor? Neden encode kullandık? Neden data.encode.utf-8nşeklinde kullanmadık.
+
+JSON; bütün programlama dilleri arasında, yapılandırılmış veri değişimini kolaylaştıran bir metin biçimidir.
+json.dumps, string'in nesneye dönüştürülmesini sağlar.
+Farklı dosyaların biçimlerini değiştirerek daha küçük bir hale getirilmesini sağlar.
+
+2) Json dumps nedir? json load nedir json loads nedir?
+
+"dumps" string'i nesneye dönüştürür
+"load"  dosyanın okunmasını sağlar
+"loads" nesneyi string'e dönüştürür
+
+3) Dockera girdikten sonra spesific bir container hangi networkta çalışıyor ve default ip nasıl bulunacak? Bir satırlık kod olarak yazılacak.
+
+Docker, default olarak 172.17. 0.0/16 subnetini kullanır.
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+
+5) Neden UTF-8 kullanıyoruz?
+
+Çünkü HTML sistemi sadece bir kez encode edilir.
+
+6) 192.168.0.1 nedir ve 127.00.01 arasındaki fark nedir?
+
+"192.168.0.1" yerel IP adresidir, "127.00.01" bilgisayarın yerel IP adresidir.
